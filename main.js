@@ -1,4 +1,3 @@
-
 const menuToggle = document.getElementById("menuToggle");
 const drawerOverlay = document.getElementById("navDrawerOverlay");
 const navDrawer = document.getElementById("navDrawer");
