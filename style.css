@@ -458,12 +458,18 @@ a {
     transition: transform 0.25s, opacity 0.25s;
 }
 
+
+/* Animasi hamburger menjadi X */
 .menu-toggle[aria-expanded="true"] span:first-child {
     transform: translateY(7px) rotate(45deg);
 }
 
 .menu-toggle[aria-expanded="true"] span:nth-child(2) {
     opacity: 0;
+}
+
+.menu-toggle[aria-expanded="true"] span:last-child {
+    transform: translateY(-7px) rotate(-45deg);
 }
 
 /* DRAWER OVERLAY */
@@ -586,14 +592,30 @@ a {
     font-size: 11px;
 }
 
+/* Grup logo dan tombol WhatsApp */
+.brand-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+/* Desktop: tombol di sebelah logo */
+.navbar-whatsapp {
+    position: static;
+    transform: none;
+    margin: 0;
+    padding: 9px 12px;
+    font-size: 12px;
+    white-space: nowrap;
+    line-height: 1.1;
+}
+
 /* MOBILE */
 @media (max-width: 760px) {
-    .navbar {
-        gap: 10px;
-    }
-    
     .menu-toggle {
-        display: flex;
+        position: relative;
+        flex-shrink: 0;
         margin-left: auto;
     }
     
@@ -601,8 +623,14 @@ a {
         overflow: hidden;
     }
     
+    .brand-group {
+        display: contents;
+    }
+    
     .brand {
         font-size: 19px;
+        position: relative;
+        z-index: 1;
     }
     
     .brand-icon {
@@ -618,6 +646,16 @@ a {
         padding: 9px 11px;
         font-size: 11px;
         white-space: nowrap;
+    }
+    
+    .navbar-whatsapp {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+        font-size: 10px;
+        white-space: nowrap;
+        line-height: 1;
     }
     
     .hero {
