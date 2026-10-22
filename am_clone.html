@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ultra Motion Klon</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      color: #f7f5fa;
+    }
+    
+    .breadcrumb {
+      padding: 16px;
+    }
+    
+    .breadcrumb span {
+      font-size: 12px;
+      color: var(--muted);
+    }
+    
+    .container {
+      width: 100%;
+      max-width: 1100px;
+      margin: auto;
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-top: 20px;
+    }
+    
+    .sectio {
+      padding-bottom: 30px;
+    }
+    
+    .section-borde {
+      border-bottom: 1px solid var(--line);
+    }
+    
+    .separator {
+      display: flex;
+      align-items: flex-start;
+      gap: 28px;
+      margin-bottom: 35px;
+    }
+    
+    .app-icon {
+      width: 180px;
+      height: 180px;
+      border-radius: 28px;
+      flex-shrink: 0;
+      object-fit: cover;
+    }
+    
+    .app-info {
+      flex: 1;
+      min-width: 0;
+    }
+    
+    .app-info h1 {
+      font-size: clamp(24px, 4vw, 48px);
+      line-height: 1.2;
+      margin: 8px 0 25px;
+      font-weight: 750;
+      overflow-wrap: anywhere;
+    }
+    
+    /* Ukuran file dan tanggal */
+    .metadata {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    
+    .meta-item {
+      background: var(--line);
+      border: 1px solid var(--line);
+      border-radius: 40px;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      white-space: nowrap;
+      padding: 12px 20px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    
+    .meta-item svg {
+      width: 15px;
+      height: 15px;
+      flex-shrink: 0;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    
+    /* Warning */
+    .warning {
+      padding: 12px;
+      background: #332621;
+      border: 1px solid #6C4A1A;
+      border-radius: 12px;
+      margin-top: 30px;
+    }
+    
+    .warning span {
+      font-size: 12px;
+    }
+    
+    /* Tombol download */
+    .panel {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    
+    .button.primary {
+      background: #1A73E8;
+      border-color: var(--line);
+      color: #fafafa;
+    }
+    
+    .button {
+      display: block;
+      width: 100%;
+      border-radius: 12px;
+      border: 1px solid #a5f36b3a;
+      text-decoration: none;
+      text-align: center;
+      transition: 0.2s ease;
+      background: var(--accent);
+    }
+    
+    /* FAQ */
+    .faq {
+      max-width: 780px;
+      margin: auto;
+    }
+    
+    details {
+      padding: 18px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    
+    summary {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      cursor: pointer;
+      list-style: none;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    
+    summary::-webkit-details-marker {
+      display: none;
+    }
+    
+    summary::after {
+      content: "+";
+      color: var(--accent);
+      font-size: 21px;
+      font-weight: 400;
+    }
+    
+    details[open] summary::after {
+      content: "−";
+    }
+    
+    details p {
+      margin-top: 13px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.9;
+    }
+    
+    details ol {
+      padding-left: 16px;
+    }
+    
+    details li {
+      color: var(--muted);
+      font-size: 13px;
+    }
+    
+    /* MOBILE */
+    @media (max-width: 760px) {
+      body {}
+      
+      .separator {
+        gap: 14px;
+        margin-bottom: 28px;
+      }
+      
+      .app-icon {
+        width: 100px;
+        height: 100px;
+        border-radius: 20px;
+      }
+      
+      .app-info h1 {
+        font-size: 21px;
+        line-height: 1.25;
+        margin: 2px 0 14px;
+      }
+      
+      .metadata {
+        gap: 8px;
+      }
+      
+      .meta-item {
+        gap: 7px;
+        padding: 5px 10px;
+        font-size: 11px;
+      }
+      
+      .meta-item svg {
+        width: 14px;
+        height: 14px;
+      }
+      
+      
+    }
+  </style>
+</head>
+
+<body>
+  <div class="breadcrumb">
+    <span><a href="index.html">Beranda</a> > Ultra Motion Klon</span>
+  </div>
+  
+  <section class="sectio section-borde">
+    <div class="container">
+      
+      <div class="separator">
+        <img class="app-icon" src="https://blogger.googleusercontent.com/img/a/AVvXsEgQSB458cW2ubdxh8CkElqmnFMHDN24OMze6RG50QwNl6AD1XIqAomQUb2ZedhA3TMxdxm4pVDmyK_83o2oN_72Lx4FHRybKvpSgfVad9Vm8DkENmrEQXlo5VNy8m1hLxmJ0UPVR5du7XBWmOrHFQbQ18m3xYxrkP4eAGRRMJV1KpZVubZM9qxgEtRdpQEm" alt="Ultra Motion App">
+        
+        <div class="app-info">
+          <h1>
+            ULTRA MOTION KLON (5MB + WITHOUT ACCOUNT) V8.0.1 APK
+          </h1>
+          
+          <div class="metadata">
+            
+            <div class="meta-item">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="5" width="18" height="14" rx="2" />
+                <path d="M3 10h18" />
+                <path d="M8 15h3" />
+              </svg>
+              <span>280 MB</span>
+            </div>
+            
+            <div class="meta-item">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="5" width="18" height="16" rx="2" />
+                <path d="M16 3v4M8 3v4M3 10h18" />
+              </svg>
+              <span>20 Oktober 2026</span>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="panel">
+        <a class="button primary" href="">
+          Download Melalui Safelinku
+        </a>
+        
+        <a class="button" href="https://bayarlink.com/y6wAHv">
+          Download Langsung MediaFire
+        </a>
+      </div>
+      
+      <div class="warning">
+        <span>⚠️ Simpan salinan proyek Anda sebelum Anda menghapus aplikasi apa pun.
+        </span>
+      </div>
+      
+    </div>
+  </section>
+  
+  <!-- FAQ -->
+  <section class="sectio" id="faq">
+    <div class="container">
+      
+      <div class="section-heading">
+        <div class="eyebrow">Pertanyaan Umum</div>
+        <p>
+          Informasi yang perlu diketahui sebelum mengunduh
+          aplikasi melalui ModyLabs.
+        </p>
+      </div>
+      
+      <div class="faq">
+        <details>
+          <summary>Bagaimana Cara Mengunduh Aplikasi</summary>
+          <p>
+          <ol>
+            <li>Download Melalui Safelinku artinya Unduhan akan dimulai setelah melewati iklan.</li>
+            <li>Download Langsung Mediafire Artinya unduhan Langsung dimulai tanpa melewati iklan</li>
+          </ol>
+          </p>
+        </details>
+        
+        <details>
+          <summary>Apakah Ultra Motion Gratis?</summary>
+          <p>
+            Semua fitur Premium terbuka gratis tanpa tanda air sejak 2023.
+          </p>
+        </details>
+        
+        <details>
+          <summary>Apakah Ultra Motion Aman?</summary>
+          <p>
+            100% aman, setiap build di modifikasi secara manual, di uji pada ponsel sungguhan dan di pindai sebelum dirilis,Tidak ada malware sama sekali
+          </p>
+        </details>
+      </div>
+      
+    </div>
+  </section>
+</body>
+
+</html>
