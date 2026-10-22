@@ -480,15 +480,14 @@ a {
     visibility: visible;
 }
 
-/* NAVIGATION DRAWER */
+/* Drawer */
 .nav-drawer {
     position: absolute;
     top: 0;
     left: 0;
-    width: min(82%, 320px);
+    width: min(82%, 280px);
     height: 100%;
     height: 100dvh;
-    padding: 24px 20px;
     overflow-y: auto;
     background: var(--surface);
     border-right: 1px solid var(--line);
@@ -507,7 +506,7 @@ a {
     align-items: center;
     justify-content: space-between;
     gap: 12px;
-    padding-bottom: 22px;
+    padding: 18px 20px 18px 20px;
     border-bottom: 1px solid var(--line);
 }
 
@@ -533,7 +532,6 @@ a {
 }
 
 .drawer-label {
-    margin: 24px 0 10px;
     color: var(--muted);
     font-size: 10px;
     font-weight: 800;
@@ -544,6 +542,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 6px;
+    margin-top: 10px;
 }
 
 .drawer-links a {
@@ -552,7 +551,6 @@ a {
     gap: 12px;
     padding: 12px;
     border: 1px solid transparent;
-    border-radius: 8px;
     color: #c1c4cc;
     font-size: 14px;
     transition: background 0.2s, color 0.2s;
@@ -573,16 +571,21 @@ a {
 }
 
 .drawer-download {
-    width: 100%;
-    margin-top: 24px;
+    margin-top: 10px;
+    margin-left: 18px;
+    margin-right: 18px;
 }
 
 .drawer-footer {
     margin-top: auto;
-    padding-top: 24px;
+    margin-left: 18px;
+    margin-bottom: 18px;
+    padding-top: 25px;
     color: var(--muted);
     font-size: 11px;
 }
+
+
 
 /* Grup logo dan tombol WhatsApp */
 .brand-group {
