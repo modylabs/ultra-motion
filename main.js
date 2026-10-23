@@ -1,66 +1,53 @@
-const menuToggle = document.getElementById("menuToggle");
-const drawerOverlay = document.getElementById("navDrawerOverlay");
-const navDrawer = document.getElementById("navDrawer");
-const drawerClose = document.getElementById("drawerClose");
 
-function openDrawer() {
-  drawerOverlay.classList.add("is-open");
-  drawerOverlay.setAttribute("aria-hidden", "false");
-  navDrawer.inert = false;
-  menuToggle.setAttribute("aria-expanded", "true");
-  menuToggle.setAttribute("aria-label", "Tutup navigasi");
-  document.body.classList.add("drawer-open");
-  drawerClose.focus();
-}
+document.addEventListener("DOMContentLoaded", function () {
+  const toggle = document.getElementById("menuToggle");
+  const overlay = document.getElementById("navDrawerOverlay");
+  const drawer = document.getElementById("navDrawer");
+  const close = document.getElementById("drawerClose");
 
-function closeDrawer() {
-  drawerOverlay.classList.remove("is-open");
-  drawerOverlay.setAttribute("aria-hidden", "true");
-  navDrawer.inert = true;
-  menuToggle.setAttribute("aria-expanded", "false");
-  menuToggle.setAttribute("aria-label", "Buka navigasi");
-  document.body.classList.remove("drawer-open");
-  menuToggle.focus();
-}
-
-menuToggle.addEventListener("click", () => {
-  if (menuToggle.getAttribute("aria-expanded") === "true") {
-    closeDrawer();
-  } else {
-    openDrawer();
+  // Berhenti jika elemen menu tidak ditemukan
+  if (!toggle || !overlay || !drawer || !close) {
+    console.error("Elemen menu tidak ditemukan.");
+    return;
   }
-});
 
-drawerClose.addEventListener("click", closeDrawer);
-
-// Tutup saat area gelap di luar drawer ditekan
-drawerOverlay.addEventListener("click", (event) => {
-  if (event.target === drawerOverlay) {
-    closeDrawer();
+  function openMenu() {
+    overlay.classList.add("is-open");
+    document.body.classList.add("drawer-open");
+    overlay.setAttribute("aria-hidden", "false");
+    toggle.setAttribute("aria-expanded", "true");
+    toggle.setAttribute("aria-label", "Tutup navigasi");
+    drawer.inert = false;
   }
-});
 
-// Tutup setelah memilih menu
-navDrawer.querySelectorAll('a[href^="#"]').forEach((link) => {
-  link.addEventListener("click", () => {
-    closeDrawer();
+  function closeMenu() {
+    overlay.classList.remove("is-open");
+    document.body.classList.remove("drawer-open");
+    overlay.setAttribute("aria-hidden", "true");
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.setAttribute("aria-label", "Buka navigasi");
+    drawer.inert = true;
+  }
+
+  toggle.addEventListener("click", function () {
+    if (toggle.getAttribute("aria-expanded") === "true") {
+      closeMenu();
+    } else {
+      openMenu();
+    }
   });
-});
 
-// Tutup dengan tombol Escape
-document.addEventListener("keydown", (event) => {
-  if (
-    event.key === "Escape" &&
-    menuToggle.getAttribute("aria-expanded") === "true"
-  ) {
-    closeDrawer();
-  }
-});
+  close.addEventListener("click", closeMenu);
 
-// Tahun otomatis
-document.getElementById("current-year").textContent =
-  new Date().getFullYear();
+  overlay.addEventListener("click", function (event) {
+    if (event.target === overlay) closeMenu();
+  });
 
-document.querySelectorAll(".drawer-year").forEach((element) => {
-  element.textContent = new Date().getFullYear();
+  drawer.querySelectorAll("a").forEach(function (link) {
+    link.addEventListener("click", closeMenu);
+  });
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") closeMenu();
+  });
 });
