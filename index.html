@@ -2,316 +2,318 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="monetag" content="ddcefd98f4525bfacaf315ccb31ff2a1"/>
-    <title>ModyLabs</title>
-    
-    <!-- HTML -->
-    <link rel="stylesheet" href="style.css" />
-    <!--
-    <link rel="stylesheet" href="https://modylabs.github.io/ultra-motion/style.css" />-->
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="monetag" content="ddcefd98f4525bfacaf315ccb31ff2a1" />
+  <title>ModyLabs</title>
+  
+  <!-- HTML -->
+  <link rel="stylesheet" href="style.css" />
+  
 </head>
 
 <body>
-    <!-- HEADER STICKY -->
+  <!-- HEADER STICKY -->
+  
+  
+  <header class="site-header">
+    <div class="container navbar">
+      
+      <div class="brand-group">
+        <a href="#home" class="brand" aria-label="ModyLabs Beranda">
+          <span class="brand-icon">M</span>
+        </a>
+        
+        <a class="button navbar-whatsapp" href="https://whatsapp.com/channel/0029Vb8zZ8FHbFVDOEqMI53Q">
+          Join Whatsapp Channel ↗
+        </a>
+      </div>
+      
+      <nav class="nav-links" aria-label="Navigasi utama">
+        <a href="#home">Beranda</a>
+        <a href="#download">Unduh</a>
+        <a href="#features">Fitur</a>
+        <a href="#about">Tentang</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Buka navigasi" aria-controls="navDrawerOverlay" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+    </div>
+  </header>
+  
+  
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="drawer-overlay" id="navDrawerOverlay" aria-hidden="true">
     
-
-<header class="site-header">
-  <div class="container navbar">
-
-    <div class="brand-group">
-      <a href="#home" class="brand" aria-label="ModyLabs Beranda">
-        <span class="brand-icon">M</span>
-      </a>
-
-      <a class="button navbar-whatsapp"
-         href="https://whatsapp.com/channel/0029Vb8zZ8FHbFVDOEqMI53Q">
+    <aside class="nav-drawer" id="navDrawer" aria-label="Navigasi mobile" inert>
+      
+      <div class="drawer-header">
+        <div class="drawer-title">
+          Mody<em>Labs</em>
+        </div>
+        
+        <button class="drawer-close" id="drawerClose" type="button" aria-label="Tutup navigasi">
+          ×
+        </button>
+      </div>
+      
+      <div class="drawer-label"></div>
+      
+      <nav class="drawer-links" aria-label="Menu mobile">
+        <a href="#download"><span>↓</span> Unduh</a>
+        <a href="#features"><span>✦</span> Fitur</a>
+        <a href="#about"><span>ⓘ</span> Tentang</a>
+        <a href="#faq"><span>?</span> FAQ</a>
+      </nav>
+      
+      <a class="button drawer-download" href="https://whatsapp.com/channel/0029Vb8zZ8FHbFVDOEqMI53Q">
         Join Whatsapp Channel ↗
       </a>
-    </div>
-
-    <nav class="nav-links" aria-label="Navigasi utama">
-      <a href="#home">Beranda</a>
-      <a href="#download">Unduh</a>
-      <a href="#features">Fitur</a>
-      <a href="#about">Tentang</a>
-      <a href="#faq">FAQ</a>
-    </nav>
-
-    <button class="menu-toggle" id="menuToggle"
-      type="button"
-      aria-label="Buka navigasi"
-      aria-controls="navDrawerOverlay"
-      aria-expanded="false">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-
+      
+      <div class="drawer-footer">
+        © <span class="drawer-year">2026</span> ModyLabs
+      </div>
+      
+    </aside>
   </div>
-</header>
-
-    
-    <!-- MOBILE NAVIGATION DRAWER -->
-    <div class="drawer-overlay" id="navDrawerOverlay" aria-hidden="true">
-        
-        <aside class="nav-drawer" id="navDrawer" aria-label="Navigasi mobile" inert>
-            
-            <div class="drawer-header">
-                <div class="drawer-title">
-                    Mody<em>Labs</em>
-                </div>
-                
-                <button class="drawer-close" id="drawerClose" type="button" aria-label="Tutup navigasi">
-                    ×
-                </button>
-            </div>
-            
-            <div class="drawer-label"></div>
-            
-            <nav class="drawer-links" aria-label="Menu mobile">
-                <a href="#download"><span>↓</span> Unduh</a>
-                <a href="#features"><span>✦</span> Fitur</a>
-                <a href="#about"><span>ⓘ</span> Tentang</a>
-                <a href="#faq"><span>?</span> FAQ</a>
-            </nav>
-            
-            <a class="button drawer-download" href="https://whatsapp.com/channel/0029Vb8zZ8FHbFVDOEqMI53Q">
-                Join Chanel Whatsapp ↗
-            </a>
-            
-            <div class="drawer-footer">
-                © <span class="drawer-year">2026</span> ModyLabs
-            </div>
-            
-        </aside>
-    </div>
-    
-    
-    
-    <main>
-        <section class="hero" id="home">
-            
-            <div class="container hero-content">
-                <div class="eyebrow">
-                    ModyLabs
-                </div>
-                <div class="eyebro">
-                    <h1>Ultra <em>Motion</em></h1>
-                </div>
-                
-                <div class="quick-info">
-                    <span>Versi 8.0.1</span>
-                </div>
-                
-                <p class="lead">
-                    Ultra Motion adalah pengembangan ulang lengkap dari Alight Motion, dibuat ulang oleh seorang editor yang sudah bosan menunggu. semua fitur premium terbuka, anda dapat mengimpor dan mengekspor paket proyek di atas 5MB, 497 efek tambahan sudah terintegrasi, seluruh aplikasi menggunakan mode gelap yang konsisten, dan bug yang di abaikan pengembang selama bertahun-tahun akhirnya di perbaiki.
-                </p>
-                
-                <div class="actions">
-                    <a class="button" href="#download">Download Sekarang ↓</a>
-                    <a class="button button-outline" href="#features">
-                        Jelajahi Fitur
-                    </a>
-                </div>
-                
-                
-            </div>
-            
-        </section>
-        
-        <!-- FEATURE COMPARISON -->
-        <section class="section section-border" id="features">
-            <div class="container">
-                
-                <div class="section-heading">
-                    <div class="eyebrow">FITUR</div>
-                </div>
-                
-                <div class="compare-grid">
-                    <article class="compare-card">
-                        
-                        <div class="compare-title">
-                            <h3>01. IMPOR PROYEK 5MB+</h3>
-                            <p>Perbandingan antarmuka</p>
-                        </div>
-                        
-                        <div class="compare-images">
-                            <div class="shot-column">
-                                <span class="shot-label">ORIGINAL</span>
-                                <div class="shot">
-                                    <img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEibHKeVGgmn4jQgqh_dh6f4Z-zpU-hL0ZjwsZtOf19io8UYz6d-yv78_JvsvR-bA9qmfH7jww4nXzhECsvXy_3pcrArD3IDTS4oxrVwpYuROVd47JiL1SaFs4jdjBxrXAdNWlAExQFjoGZWN-sCnVajxkhF8Lvqs3MjCN0ll3TqlhanzNoMtppoWbRNAuRF" width="400" />
-                                </div>
-                            </div>
-                            
-                            <div class="shot-column">
-                                <span class="shot-label">ULTRA MOTION</span>
-                                <div class="shot">
-                                    <img alt="" border="0" data-original-height="2340" data-original-width="1080" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmGGEO8GGbtGWFun618vEUdrKKdjxdRjI4i87Z5cAY1BgpmBNueiVd13lsEqe9Pa1WU1GA_Nn0-eDZS_oWY3w_XS8anDerFQScaO_OCdjPwZCNxe5mKMZ5X_-eC21w-t3BNNsCG-5zIfnjFH4Akx7d8aCFO_muOLTVvVZeNkg-gch-nphbOi4h-v7HZRPu/s1600/ebbbd81d-8c0b-42c0-ac03-c38319d0f80c.webp" />
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </article>
-                    
-                    <article class="compare-card">
-                        
-                        <div class="compare-title">
-                            <h3>02.EFEK TAMBAHAN BARU</h3>
-                            <p>Perbandingan antarmuka</p>
-                        </div>
-                        
-                        <div class="compare-images">
-                            <div class="shot-column">
-                                <span class="shot-label">ORIGINAL</span>
-                                <div class="shot">
-                                    <img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEj5fQ0Ayd_kIlRQsHvrKwQN65UZkHo_bL7vQTnU1bqQSkYadocEvOcGmaOIXP4JBuawljmOfZi-OZDN1mmL6DtYBPqvlWtP4VoNwsH5Fxu8sOuPJj169FwvugfSnMavazC25fn3Ww6YLvqvuA6WHa-l9fOuM3UTfIPGI6pMHQkNbGYJIWuHrxL2K9Pnz8UQ" width="400" />
-                                </div>
-                            </div>
-                            
-                            <div class="shot-column">
-                                <span class="shot-label">ULTRA MOTION</span>
-                                <div class="shot">
-                                    <img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEj0JL9nHgOBYbh9AaGoRk8A1PTb0QDYYTwy81ODlWBEYeLeEeNEJyri-FkbpMx_i2Anxfa1gNBiHMykyA2zvLOqej67SEhxwgJRnRwzvd4JReynRqdj5o-toZ-F93TkOuWQ1BDN1rHuB3b_I_B_Zw0a2OmjTHyU80WRckLvfQuJ69aZW-kR4whHNCjcqBi5" width="400" />
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </article>
-                    
-                    <article class="compare-card">
-                        
-                        <div class="compare-title">
-                            <h3>03.PENCARIAN AUDIO</h3>
-                            <p>Perbandingan antarmuka</p>
-                            
-                        </div>
-                        
-                        <div class="compare-images">
-                            <div class="shot-column">
-                                <span class="shot-label">ORIGINAL</span>
-                                <div class="shot">
-                                    <img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEhQ_BWQdSLuZcl8FjWWPekW5o61Ct33aqUZcCqcVf4-FxES4HARcaZWxViGblvDBj1UZBs1YHndJnfofj9LcaBSc8aCcVL1ILp3NmB0ARY4h_z_zgUgKFvuxG_3ydFr4GGUBxd9kPCQ1XMtD3U9Otkf-XZYjgjmK_XnC6iWXyd7tlrhD1i7HESdOd412h1h" width="400" />
-                                </div>
-                            </div>
-                            
-                            <div class="shot-column">
-                                <span class="shot-label">ULTRA MOTION</span>
-                                <div class="shot">
-                                    <img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEgM4WyK5IfBNj8gh9hM3PrITL-yy0fupFNOCCC8Cg-SOQLNmq0oK7xLjT-XLZqL5fIDk7Mb_g_LAI-ukTqhornJgDSD6t6YOxKtlZmQz3BRXGB2332BZdnO0C24TXvCEMk-lUUF8tqSC-ayBsCNHIE7M5Mv2jAHFt7oqgTN9kIiufGebc5smwcUbNpKOnZZ" width="400" />
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </article>
-                </div>
-                
-                <!-- isi -->
-                
-            </div>
-        </section>
-        
-        <!-- ABOUT -->
-        <section class="section section-border" id="about">
-            <div class="container">
-                
-                <div class="section-heading">
-                    <div class="eyebrow">Download Versi Asli Atau klon ?? </div>
-                </div>
-                
-                <div class="benefit-grid">
-                    
-                    <article class="benefit">
-                        <span class="check">✓</span>
-                        <div>
-                            <h3>Versi Asli</h3>
-                            <p>
-                                Versi asli menggantikan Alight Motion.
-                                hapus installasi Alight Motion terlebih dahulu!!
-                                jika tidak, installasi akan gagal
-                            </p>
-                        </div>
-                    </article>
-                    
-                    <article class="benefit">
-                        <span class="check">✓</span>
-                        <div>
-                            <h3>Versi klon</h3>
-                            <p>
-                                Versi clone tidak menggantikan Alight Motion.
-                                kedua aplikasi tidak saling bertentangan
-                            </p>
-                        </div>
-                    </article>
-                    
-                </div>
-                
-                <div class="download-panel" id="download">
-                    <!-- GANTI LINK DI BAWAH -->
-                    <a class="button" href="https://modylabs.github.io/ultra-motion/am_ori.html">
-                        Download Versi Asli ↗
-                    </a>
-                    
-                    <a class="button" href="https://modylabs.github.io/ultra-motion/am_clone.html">
-                        Download Versi Klon ↗
-                    </a>
-                    
-                </div>
-            </div>
-        </section>
-        
-        
-    </main>
-    
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container">
-            
-            <div class="footer-row">
-                
-                <a href="#home" class="brand">
-                    <span class="brand-icon">M</span>
-                    <span>Mody<em>Labs</em></span>
-                </a>
-                
-                <div class="footer-links">
-                    <a href="#home">Beranda</a>
-                    <a href="#features">Fitur</a>
-                    <a href="#about">Tentang</a>
-                    <a href="#faq">FAQ</a>
-                </div>
-                
-                <span>
-                    © <span id="current-year">2026</span> ModyLabs
-                </span>
-                
-            </div>
-            
-            <div class="disclaimer">
-                DISCLAIMER: Nama, logo, dan produk pihak ketiga tetap
-                menjadi milik pemiliknya masing-masing. Pastikan setiap
-                file yang dibagikan memiliki izin distribusi yang sesuai.
-                Informasi keamanan dan kompatibilitas harus diverifikasi
-                untuk setiap produk.
-            </div>
-            
+  
+  
+  
+  <main>
+    <section class="hero" id="home">
+      
+      <div class="container hero-content">
+        <div class="eyebrow">
+          ModyLabs
         </div>
-    </footer>
+        <div class="eyebro">
+          <h1>Ultra <em>Motion</em></h1>
+        </div>
+        
+        <div class="quick-info">
+          <span><b>Version 8.0.1</b></span>
+        </div>
+        
+        <p class="lead">
+          Ultra Motion adalah pengembangan ulang lengkap dari Alight Motion, dibuat ulang oleh seorang editor yang sudah bosan menunggu. semua fitur premium terbuka, anda dapat mengimpor dan mengekspor paket proyek di atas 5MB, 497 efek tambahan sudah terintegrasi, seluruh aplikasi menggunakan mode gelap yang konsisten, dan bug yang di abaikan pengembang selama bertahun-tahun akhirnya di perbaiki.
+        </p>
+        
+        <div class="actions">
+          <a class="button" href="#download">Download Sekarang ↓</a>
+          <a class="button button-outline" href="#features">
+            Jelajahi Fitur
+          </a>
+        </div>
+        
+        
+      </div>
+      
+    </section>
     
-    <!-- Project 
-    <script src="https://modylabs.github.io/ultra-motion/main.js">
+    <!-- FEATURE COMPARISON -->
+    <section class="section section-border" id="features">
+      <div class="container">
+        
+        <div class="section-heading">
+          <div class="eyebrow">FITUR</div>
+        </div>
+        
+        <div class="compare-grid">
+          <article class="compare-card">
+            
+            <div class="compare-title">
+              <h3>01. IMPOR PROYEK 5MB+</h3>
+              <p>Perbandingan antarmuka</p>
+            </div>
+            
+            <div class="compare-images">
+              <div class="shot-column">
+                <span class="shot-label">ORIGINAL</span>
+                <div class="shot">
+                  <img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEibHKeVGgmn4jQgqh_dh6f4Z-zpU-hL0ZjwsZtOf19io8UYz6d-yv78_JvsvR-bA9qmfH7jww4nXzhECsvXy_3pcrArD3IDTS4oxrVwpYuROVd47JiL1SaFs4jdjBxrXAdNWlAExQFjoGZWN-sCnVajxkhF8Lvqs3MjCN0ll3TqlhanzNoMtppoWbRNAuRF" width="400" />
+                </div>
+              </div>
+              
+              <div class="shot-column">
+                <span class="shot-label">ULTRA MOTION</span>
+                <div class="shot">
+                  <img alt="" border="0" data-original-height="2340" data-original-width="1080" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmGGEO8GGbtGWFun618vEUdrKKdjxdRjI4i87Z5cAY1BgpmBNueiVd13lsEqe9Pa1WU1GA_Nn0-eDZS_oWY3w_XS8anDerFQScaO_OCdjPwZCNxe5mKMZ5X_-eC21w-t3BNNsCG-5zIfnjFH4Akx7d8aCFO_muOLTVvVZeNkg-gch-nphbOi4h-v7HZRPu/s1600/ebbbd81d-8c0b-42c0-ac03-c38319d0f80c.webp" />
+                </div>
+              </div>
+            </div>
+            
+          </article>
+          
+          <article class="compare-card">
+            
+            <div class="compare-title">
+              <h3>02.EFEK TAMBAHAN BARU</h3>
+              <p>Perbandingan antarmuka</p>
+            </div>
+            
+            <div class="compare-images">
+              <div class="shot-column">
+                <span class="shot-label">ORIGINAL</span>
+                <div class="shot">
+                  <img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEj5fQ0Ayd_kIlRQsHvrKwQN65UZkHo_bL7vQTnU1bqQSkYadocEvOcGmaOIXP4JBuawljmOfZi-OZDN1mmL6DtYBPqvlWtP4VoNwsH5Fxu8sOuPJj169FwvugfSnMavazC25fn3Ww6YLvqvuA6WHa-l9fOuM3UTfIPGI6pMHQkNbGYJIWuHrxL2K9Pnz8UQ" width="400" />
+                </div>
+              </div>
+              
+              <div class="shot-column">
+                <span class="shot-label">ULTRA MOTION</span>
+                <div class="shot">
+                  <img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEj0JL9nHgOBYbh9AaGoRk8A1PTb0QDYYTwy81ODlWBEYeLeEeNEJyri-FkbpMx_i2Anxfa1gNBiHMykyA2zvLOqej67SEhxwgJRnRwzvd4JReynRqdj5o-toZ-F93TkOuWQ1BDN1rHuB3b_I_B_Zw0a2OmjTHyU80WRckLvfQuJ69aZW-kR4whHNCjcqBi5" width="400" />
+                </div>
+              </div>
+            </div>
+            
+          </article>
+          
+          <article class="compare-card">
+            
+            <div class="compare-title">
+              <h3>03.PENCARIAN AUDIO</h3>
+              <p>Perbandingan antarmuka</p>
+              
+            </div>
+            
+            <div class="compare-images">
+              <div class="shot-column">
+                <span class="shot-label">ORIGINAL</span>
+                <div class="shot">
+                  <img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEhQ_BWQdSLuZcl8FjWWPekW5o61Ct33aqUZcCqcVf4-FxES4HARcaZWxViGblvDBj1UZBs1YHndJnfofj9LcaBSc8aCcVL1ILp3NmB0ARY4h_z_zgUgKFvuxG_3ydFr4GGUBxd9kPCQ1XMtD3U9Otkf-XZYjgjmK_XnC6iWXyd7tlrhD1i7HESdOd412h1h" width="400" />
+                </div>
+              </div>
+              
+              <div class="shot-column">
+                <span class="shot-label">ULTRA MOTION</span>
+                <div class="shot">
+                  <img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEgM4WyK5IfBNj8gh9hM3PrITL-yy0fupFNOCCC8Cg-SOQLNmq0oK7xLjT-XLZqL5fIDk7Mb_g_LAI-ukTqhornJgDSD6t6YOxKtlZmQz3BRXGB2332BZdnO0C24TXvCEMk-lUUF8tqSC-ayBsCNHIE7M5Mv2jAHFt7oqgTN9kIiufGebc5smwcUbNpKOnZZ" width="400" />
+                </div>
+              </div>
+            </div>
+            
+          </article>
+        </div>
+        
+        <!-- isi -->
+        
+      </div>
+    </section>
     
-    </script>-->
-    <script src="main.js"></script>
-    <script type="text/javascript"> 
-    var go_url = 'https://sfl.gl/'; 
-    var api = '6af3d3e638df6f8b1346f1f08b734f43a4d41dea'; 
-    var shorten_includ = ["https://modylabs.github.io/ultra-motion/index.html"]; 
-    </script> 
-    <script src="//safelinku.com/js/web-script.js"></script>
+    <!-- ABOUT -->
+    <section class="section section-border" id="about">
+      <div class="container">
+        
+        <div class="section-heading">
+          <div class="eyebrow">Download Versi Asli Atau klon ?? </div>
+        </div>
+        
+        <div class="benefit-grid">
+          
+          <article class="benefit">
+            <span class="check">✓</span>
+            <div>
+              <h3>Versi Asli</h3>
+              <p>
+                Versi asli menggantikan Alight Motion.
+                hapus installasi Alight Motion terlebih dahulu!!
+                jika tidak, installasi akan gagal
+              </p>
+            </div>
+          </article>
+          
+          <article class="benefit">
+            <span class="check">✓</span>
+            <div>
+              <h3>Versi klon</h3>
+              <p>
+                Versi clone tidak menggantikan Alight Motion.
+                kedua aplikasi tidak saling bertentangan
+              </p>
+            </div>
+          </article>
+          
+        </div>
+        
+        <div class="download-panel" id="download">
+          <!-- GANTI LINK DI BAWAH -->
+          <a class="button" href="./am_ori.html">
+            Download Versi Asli ↗
+          </a>
+          
+          <a class="button" href="./am_clone.html">
+            Download Versi Klon ↗
+          </a>
+          
+        </div>
+      </div>
+    </section>
+    
+    <!-- Aplikasi Lainnya -->
+    <section class="section section-border" id="lainnya">
+      
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">APLIKASI LAINNYA </div>
+        </div>
+        
+        <a href="https://modylabs.github.io/capcut-ultra/">
+          <div class="separator">
+            <img class="app-icon" alt="" border="0" width="320" data-original-height="554" data-original-width="554" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_yJJTfos-azdaBAHX6GHn6ggDXZhTutDpLvLdidI0CssOijgOClG2aFuYTH5nAJMpa_RIMvRFhrP0q016j5WjTrxDmlisJaU2TsDHoAPYyla_ijeaUzHqlsM-9OJh4cU-8nZWoU2SHT4kBFL2jCof2Fy5oPNV1z-EjLQs0zTK3laS8tKGRUs2m3ttV870/s320/2a89c45ab3544c197daeafacdd3d9a6c.jpg" />
+            
+            <div class="app-info">
+              <h2>CapCut Ultra Version 23.0.0</h2>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+    
+    
+  </main>
+  
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      
+      <div class="footer-row">
+        
+        <a href="#home" class="brand">
+          <span class="brand-icon">M</span>
+          <span style="color: white;">Mody<em>Labs</em></span>
+        </a>
+        
+        <div class="footer-links">
+          <a href="https://youtube.com/@modylabss?si=n0IpZzDV3QB1d4Ib">My YouTube</a>
+          <a href="https://whatsapp.com/channel/0029Vb8zZ8FHbFVDOEqMI53Q">Whatsapp Channel</a>
+        </div>
+        
+        <span>
+          © <span id="current-year">2026</span> . All Rights Reserved
+        </span>
+        
+      </div>
+      
+      <div class="disclaimer">
+        DISCLAIMER: Nama, logo, dan produk pihak ketiga tetap
+        menjadi milik pemiliknya masing-masing. Pastikan setiap
+        file yang dibagikan memiliki izin distribusi yang sesuai.
+        Informasi keamanan dan kompatibilitas harus diverifikasi
+        untuk setiap produk.
+      </div>
+      
+    </div>
+  </footer>
+  
+  <script src="main.js"></script>
+  
 </body>
 
 </html>
